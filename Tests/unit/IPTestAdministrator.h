@@ -19,9 +19,7 @@
 
 #pragma once
 
-#ifndef MODULE_NAME
 #define MODULE_NAME ThunderUnitTests
-#endif
 
 #include <string>
 #include <time.h>
