@@ -100,6 +100,8 @@ if (HIDE_NON_EXTERNAL_SYMBOLS)
     set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
 endif()
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall")
+
 set(EXTERN_EVENTS ${EXTERN_EVENTS} CACHE INTERNAL
         "List of events assumed to be provided by other plugins.")
 string(REPLACE " " ";" EXTERN_EVENT_LIST "${EXTERN_EVENTS}")
